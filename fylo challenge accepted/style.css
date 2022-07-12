@@ -1,0 +1,255 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+body{
+    background-color: hsl(218, 28%, 15%);
+    font-family: 'Open Sans', sans-serif ;
+}
+
+nav{
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    height: auto;
+    width: 130px;
+}
+
+.topnav{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+/* .middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+} */
+
+
+
+.topnav li a {
+    font-family:'raleway', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.firstpic{
+    width: 600;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.fimg {
+    width: 470px;
+    margin-bottom: 30px;
+}
+
+.firstpic h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: #ddd;
+}
+
+.firstpic p {
+    width: 500px;
+    color: #ddd;
+    font-family: 'open sans', sans-serif;
+    line-height: 1.6rem;
+    margin: 0 auto 30px;
+}
+
+#btn{
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background:#59d6be;
+    color: #fff;
+   
+}
+
+#btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#btn:hover {
+    background-color: #db3869;
+    color: #fff;
+} 
+
+
+.curvy-bg{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+
+.sec2{
+    width: 100%;
+    height: auto;
+    background: hsl(218, 28%, 13%);
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+
+.pri-desc {
+    color: #fff;
+}
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .open .bar2 {
+    opacity: 0;
+  }
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+  .pri-content {
+      width: 70%;
+      min-height: 50vh;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;  
+    }
+
+    .pri-wrapper {
+        margin: 30px 0;
+    }
+    
+    .pri-wrapper img{
+        width: 70px;
+        height: auto;
+        line-height: 1.5rem;
+    }
+
+    .pri-desc{
+        width: 400px;
+        line-height: 1.5rem;
+        margin-bottom: 50px;
+    }
+    .pri-desc h2{
+        font-size: 1.2rem;
+        font-family: 'raleway',sans-serif;
+        margin-bottom: 10px;
+    }
+
+
+
+/* media query for small devices */
+@media screen and (max-width: 375px){
+    
+    nav {
+        width: 100%;
+    }
+    #hamburger-icon {
+        display: none;
+      }
+    .topnav{
+        display: none;
+    }
+    .logo{
+        width: 70px;
+        height: auto;
+    }
+    ul.topnav li{
+        width: 70px;
+        margin-right: 5px;
+    }
+    ul.topnav li:nth-child(2){
+        width: 50px;
+    }
+    ul.topnav li:nth-child(3){
+        width: 50px;
+    }
+    .header{
+        width:300px;
+        margin: auto;
+    }
+    .fimg{
+       width: 350px;
+    }
+    .firstpic h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    
+    }
+    .firstpic p{
+        width: 318px;
+        line-height: 1.5rem;
+    }
+    #btn{
+        width: 200px;
+    }
+    .curvy-bg{
+        display: none;
+    }
+
+}
